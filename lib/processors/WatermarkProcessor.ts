@@ -1,6 +1,7 @@
 class WatermarkProcessor extends VideoProcessor {
   private context: OffscreenCanvasRenderingContext2D | null = null;
-  private watermarkImage: ImageBitmap | null = null;
+  private watermarkImage: ImageBitmap
+ | null = null;
 
   constructor(port: MessagePort, options?: any) {
     super(port, options);
